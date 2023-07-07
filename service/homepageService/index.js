@@ -7,9 +7,8 @@ const homepageForm=async (data)=>{
     try {
         const res=await repository.post(data)
         if(res?.country){
-            await sendMailToOwner(res)
+            sendMailToOwner(res)
             return {...res._doc,mailPassed:"okay"}
-
         }
 
         return res
