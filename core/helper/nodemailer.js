@@ -1,6 +1,7 @@
 const {envConfig}=require("./../../configuration")
 
  const sendMail=async(res)=>{
+    console.log(res)
     const html=`
     <div>
         <h1 style="color:#7634bf">Thank you for connecting with us </h1>
@@ -31,7 +32,6 @@ const {envConfig}=require("./../../configuration")
             }
         })
      
-        res.status(200).send("f")
     }
 
 module.exports=sendMail    
