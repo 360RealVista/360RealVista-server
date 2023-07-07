@@ -6,11 +6,10 @@ const repository=new homepageRepositories()
 const homepageForm=async (data)=>{
     try {
         const res=await repository.post(data)
-        if(res?.name){
+        if(res?.country){
             await sendMailToOwner(res)
-            return {...res._doc,mailResponse:"okay"}
+            return {...res._doc,mailPassed:"okay"}
 
-        //    console.log({...res._doc,mailResponse:"okay"})
         }
 
         return res
