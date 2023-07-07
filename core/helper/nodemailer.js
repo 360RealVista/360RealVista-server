@@ -22,13 +22,16 @@ const {envConfig}=require("./../../configuration")
         html
      };
 
-     envConfig.nodemailerTransporter.sendMail(mailOptions, function(error, info){
+  await envConfig.nodemailerTransporter.sendMail(mailOptions, function(error, info){
          if(error){
              console.log(error);
             }else{
                 console.log("Email sent: " + info.response);
+                return info.response
             }
         })
+     
     }
+
 
 module.exports=sendMail    
