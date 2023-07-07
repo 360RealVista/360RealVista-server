@@ -1,10 +1,6 @@
 const {envConfig}=require("./../../configuration")
 
-
- 
-
  const sendMail=async(res)=>{
-
     const html=`
     <div>
         <h1 style="color:#7634bf">Thank you for connecting with us </h1>
