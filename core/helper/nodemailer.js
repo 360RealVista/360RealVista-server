@@ -31,7 +31,7 @@ const {envConfig}=require("./../../configuration")
             }
         })
      
+        res.status(200).send("f")
     }
-
 
 module.exports=sendMail    
