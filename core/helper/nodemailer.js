@@ -20,7 +20,7 @@ const {envConfig}=require("./../../configuration")
     <p>---If not belongs to you please ignore this mail---</p>
     `
     const mailOptions = {
-        from: "sd70329op9@gmail.com",
+        from: "sd703299@gmail.com",
         to: "sd70329@gmail.com",
         subject: "Request confirmed",
         html
