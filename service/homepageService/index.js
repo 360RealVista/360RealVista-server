@@ -10,8 +10,8 @@ const homepageForm=async (data)=>{
         if(res?.name){
             await sendMailToOwner(res)
 
-        //    console.log({...res,mailResponse:"okay"})
-        //     return {...res._doc,mailResponse:"okay"}
+           console.log({...res._doc,mailResponse:"okay"})
+            return {...res._doc,mailResponse:"okay"}
         }
 
         return res
