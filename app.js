@@ -9,6 +9,9 @@ app.use(cors({origin:"*"}))
 app.use(express.json())
 
 app.use("/",v1Routes)
+app.get("/",(req,res)=>{
+    return res.status(200).send("heool")
+})
 
 
 
