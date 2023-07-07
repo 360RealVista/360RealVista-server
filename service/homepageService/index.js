@@ -8,10 +8,10 @@ const homepageForm=async (data)=>{
         const res=await repository.post(data)
         console.log(res)
         if(res?.name){
-            await sendMailToOwner(res)
-
-           console.log({...res._doc,mailResponse:"okay"})
             return {...res._doc,mailResponse:"okay"}
+            // await sendMailToOwner(res)
+
+        //    console.log({...res._doc,mailResponse:"okay"})
         }
 
         return res
