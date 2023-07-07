@@ -1,0 +1,1 @@
+module.exports={v1Routes:require("./v1")}
