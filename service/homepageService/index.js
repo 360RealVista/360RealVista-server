@@ -10,16 +10,10 @@ const homepageForm=async (data)=>{
             await sendMailToOwner(res)
             return {...res._doc,mailPassed:"okay"}
         }
-
         return res
     } catch (error) {
             return error
     }
-
-    
 }
-
-
-
 
 module.exports={homepageForm}
