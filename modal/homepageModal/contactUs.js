@@ -12,7 +12,7 @@ name:{
       },
     },
 
-number:{
+phone:{
     type:Number,
     required: [true, 'Number is required'],
     validate: {
