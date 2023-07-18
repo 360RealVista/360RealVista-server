@@ -1,1 +1,4 @@
-module.exports={requestFormModal:require("./homepageModal")}
+module.exports={
+    requestFormModal:require("./homepageModal"),
+    contactUsFormModal:require("./homepageModal/contactUs"),
+}

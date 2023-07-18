@@ -1,14 +1,19 @@
 const CURDRepository=require("../CRUD")
-const {requestFormModal}=require("./../../modal")
+const {requestFormModal,contactUsFormModal}=require("./../../modal")
 
 
 class homepageRepositories extends CURDRepository{
     constructor(){
         super(requestFormModal)
     }
+}
 
+class contactFormRepositories extends CURDRepository{
+    constructor(){
+        super(contactUsFormModal)
+    }
 }
 
 
 
-module.exports={homepageRepositories}
+module.exports={homepageRepositories,contactFormRepositories}

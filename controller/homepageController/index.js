@@ -27,5 +27,27 @@ async function postRequestForm(req,res){
         return  res.status(400).send(error)
     }
 }
+async function postContactUsForm(req,res){
+    try {
+        const data={
+            name:req.body?.name,
+            email:req.body?.email,
+            number:req.body?.number,
+            subject:req.body?.subject,
+            message:req.body?.message,
+            
+        }
+       const response=await homepageService.homepageContactForm(data)
+       
+       if (response?.name === "ValidationError"){
+           return  res.status(400).send(response)
 
-module.exports={postRequestForm}
+       }
+        return  res.status(200).send(response)
+        
+    } catch (error) {
+        return  res.status(400).send(error)
+    }
+}
+
+module.exports={postRequestForm,postContactUsForm}

@@ -10,7 +10,7 @@ app.use(express.json())
 
 app.use("/",v1Routes)
 app.get("/",(req,res)=>{
-    return res.status(200).send("heool")
+    return res.status(200).send("hello ... i am live")
 })
 
 

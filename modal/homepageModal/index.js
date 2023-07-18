@@ -101,7 +101,38 @@ service:{
   estimated_size:{
     type:[String],
     required:[true,"Atleast give on Estimate Size"]
-  }
+  },
+  email:{
+    type:String,
+    // required: [true, 'email  is required'],
+    validate: {
+        validator: function(v) {
+          return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(v);
+        },
+        message: props => `${props.value} is not a valid name`
+      },
+    },
+
+    subject:{
+      type:String,
+      // required: [true, 'Other service brief title is required'],
+      validate: {
+          validator: function(v) {
+            return /^[A-Za-z0-9\s]+$/.test(v);
+          },
+          message: props => `${props.value} is not a valid name`
+        },
+  },
+  message:{
+    type:String,
+    // required: [true, 'Other service brief title is required'],
+    validate: {
+        validator: function(v) {
+          return /^[A-Za-z0-9\s]+$/.test(v);
+        },
+        message: props => `${props.value} is not a valid name`
+      },
+},
 
 
 
