@@ -14,7 +14,7 @@ name:{
 
 phone:{
     type:Number,
-    required: [true, 'Number is required'],
+    required: [true, 'number is required'],
     validate: {
         validator: function(v) {
           return /^(0|[1-9]\d*)$/.test(v);
