@@ -90,10 +90,7 @@ service:{
     type:String,
     required: [true, 'Service is required'],
     enum:{
-      values:['Government', 'Residential building', 'Commercial building',
-      'Industrial Plants', 'Construction Sites', 'Public Places', 'Car Showrooms', 'Hotels',
-      'Restaurants', 'Coffeeshops', 'Insurance Companies', 'Furniture Showroom',
-      'Education', 'Events', 'Others'],
+      values:["Industrial plants","Real Estate agency", "Hotels","Wedding & Meeting Halls","Car showrooms ","Universities & Colleges","Private Schools","Malls & Shopping Centers","Gyms & Fitness Centers","Restaurants & Coffee Shops","Real Estate (Individual) ","Government entity","Others"],
       message:'{VALUE} is not supported'
     }
   },
