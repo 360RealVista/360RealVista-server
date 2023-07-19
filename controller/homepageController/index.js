@@ -32,7 +32,7 @@ async function postContactUsForm(req,res){
         const data={
             name:req.body?.name,
             email:req.body?.email,
-            number:req.body?.number,
+            phone:req.body?.phone,
             subject:req.body?.subject,
             message:req.body?.message,
             
