@@ -18,7 +18,7 @@ const {envConfig}=require("./../../configuration")
     `
     const mailOptions = {
         from: "sd703299@gmail.com",
-        to: "sd70329@gmail.com",
+        to: "info@360realvista.com",
         subject: "Request confirmed",
         html
      };
